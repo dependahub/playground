@@ -15,9 +15,14 @@ const debouncedSay = _.debounce(comment => {
 }, 1000);
 
 export function app(channelId) {
+	exec('say 音声読み上げを起動しました。');
 	tubeChat.connect(channelId);
 	tubeChat.on('message', ({message, name}) => {
-		const comment = message[0].text;
+		let comment = message[0].text;
+
+		comment = comment.replaceAll('8', 'ぱち');
+		comment = comment.replaceAll('w', 'わら');
+
 		console.log(`${ansiCynam}${name}${ansiReset} ${comment}`);
 		debouncedSay(comment);
 	});
