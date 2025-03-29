@@ -2,15 +2,23 @@
   "name": "@dependahub/plyaground",
   "version": "0.0.0",
   "description": "試作品とかパッケージじゃないものとか..",
+  "workspaces": [
+    "packages/*"
+  ],
   "license": "MIT",
   "author": "DependaHub (https://dependahub.com/)",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "xo && ava"
   },
-  "dependencies": {
-    "lodash": "^4.17.21",
-    "tubechat": "^1.0.3"
+  "devDependencies": {
+    "ava": "^6.2.0",
+    "xo": "^0.60.0"
+  },
+  "xo": {
+    "rules": {
+      "captalize-comment": "off"
+    }
   }
 }

@@ -8,11 +8,10 @@ YouTubeライブチャットを読み上げるツールです。
 
 ![Playground - YouTubeライブチャットの音声読み上げツールを作ろう！](https://github.com/user-attachments/assets/92f2df7a-acd1-4434-a6e8-9ef192d8df16)
 
-
 ## 起動方法
 
-ターミナルでこのディレクトリ内に入ってから実行してください。
+プロジェクトルートで ```npm install``` してから、次のコマンドを実行してください。
 
 ```bash
-node cli.js {channelId}
+saychat {channelId}
 ```

@@ -1,0 +1,19 @@
+{
+  "name": "@dependahub/saychat",
+  "version": "0.0.0",
+  "description": "YouTubeライブチャットを読み上げるツールです。",
+  "license": "MIT",
+  "author": "DependaHub",
+  "type": "module",
+  "main": "src/app.js",
+  "bin": {
+    "saychat": "cli.js"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "tubechat": "^1.0.3"
+  }
+}
